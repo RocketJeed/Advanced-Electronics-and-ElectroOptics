@@ -1,0 +1,94 @@
+# (c) Silvaco Inc., 2019
+go atlas
+Title HEMT Id-Vd and Id-Vg characteristics
+#
+# SECTION 1: Mesh input
+
+mesh
+
+x.mesh loc=0.0 spac=0.01
+x.mesh loc=0.2 spac=0.1
+x.mesh loc=0.7 spac=0.1
+x.mesh loc=1.3 spac=0.1
+x.mesh loc=1.8 spac=0.1
+x.mesh loc=2.0 spac=0.01
+
+y.mesh loc=0.0 spac=0.006
+y.mesh loc=0.06 spac=0.0002
+y.mesh loc=0.062 spac=0.0002
+y.mesh loc=1.062 spac=0.1
+
+# SECTION 2: Structure Specification
+#
+region num=1 material=GaAs y.min=0.0 y.max=0.06
+region num=2 material=GaAs y.min=0.06 y.max=0.062 
+region num=3 material=AlGaAs y.min=0.062 y.max=1.062 x.composition=0.3
+#
+elec num=1 name=source x.min=0.0 x.max=0.2 y.min=0.0 y.max=0.0
+elec num=2 name=gate x.min=0.7 x.max=1.3 y.min=0.0 y.max=0.0
+elec num=3 name=drain x.min=1.8 x.max=2 y.min=0.0 y.max=0.00
+#
+doping uniform y.min=0 y.max=0.06 n.type conc=1.e18
+doping uniform y.min=0.06 y.max=0.062 n.type conc=1.e14
+doping uniform y.min=0.062 y.max=1.062 n.type conc=1.e14
+
+#
+#
+# SECTION 3: Material Models
+#
+material align = 0.5
+model bgn fldmob srh
+
+material taun0=1.e-9 taup0=1.e-9
+material material=AlGaAs mun=2000 mup=350 affinity=3.82 nc300=5.7e17
+#
+model material=GaAs conmob
+#
+contact name=gate workfun=4.87
+#
+# SECTION 4: Id-Vd calculation
+solve init
+save outf=hemtex03_0.str
+tonyplot hemtex03_0.str -set hemtex03_0_struct.set
+
+method gummel newton itlim=20 trap maxtrap=6 
+output con.band val.band e.mobility h.mobility
+solve vgate=-0.3
+log outf=hemtex0300mV.log 
+solve vdrain=0.0 vstep=0.05 name=drain vfinal=0.3
+
+method  newton trap itlim=20 maxtrap=6 
+solve vdrain=0.5 vstep=0.25 name=drain vfinal=5
+
+log off
+
+
+#
+# SECTION 5: Id-Vg calculation
+#
+method gummel newton trap itlim=35 maxtrap=6 
+output con.band val.band e.mobility h.mobility
+solve vgate=-0.6
+solve vdrain=0
+log outf=hemtex0600mV.log 
+
+
+solve vdrain=0.0 vstep=0.05 name=drain vfinal=0.3
+
+method  newton trap itlim=35 maxtrap=6 
+solve vdrain=0.5 vstep=0.25 name=drain vfinal=5.0
+
+log off
+
+tonyplot hemtex0300mV.log  -overlay hemtex0600mV.log -set hemtex03_0_struct.set
+
+
+method newton trap itlim=35 maxtrap=6 
+output con.band val.band e.mobility h.mobility
+solve vdrain=5
+log outf = HEMTthreshHold.log
+solve vgate=-5 vstep=0.1 name=gate vfinal=0.0
+
+tonyplot HEMTthreshHold.log
+#
+quit
