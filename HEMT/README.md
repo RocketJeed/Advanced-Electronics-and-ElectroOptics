@@ -44,6 +44,14 @@ Structure and Doping level: \
 
 ![Structure](https://user-images.githubusercontent.com/66625688/84572687-c1093980-ad69-11ea-84f4-c358a83b6391.png)
 
+The Curves:
+Notice the threshold voltage of around 1.8v.
+
+![IV](https://user-images.githubusercontent.com/66625688/84572714-edbd5100-ad69-11ea-9dae-6b82ce91c900.png)
+
+![Thresh](https://user-images.githubusercontent.com/66625688/84572716-f01fab00-ad69-11ea-9138-54c5c9c217d9.png)
+
+
 
 
 
