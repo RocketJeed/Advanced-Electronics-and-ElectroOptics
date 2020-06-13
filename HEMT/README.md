@@ -19,5 +19,36 @@ Having one wide band gap in top of another lower band gab will allow electrons t
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/66625688/84572598-0d07ae80-ad69-11ea-873b-084da2964365.png">
 
 
-<img width="1032" alt="image" src="https://user-images.githubusercontent.com/66625688/84572613-44765b00-ad69-11ea-9cdb-9d175c0d9b08.png">
+<img width="1032" alt="image" src="https://user-images.githubusercontent.com/66625688/84572613-44765b00-ad69-11ea-9cdb-9d175c0d9b08.png"> 
+
+This will cause desecrate energy bands in the quantum well, and because of the two barrier, electrons will not be able to move perpendicular to the heterojunction, they will only move parallel to it in two-dimensional plane, or 2DEG
+
+Motion of electrons is no more restricted to band bending, so they will be like in vacuumed, so free to move, so higher mobility.\
+
+# My The Device Building.
+Layer 1 (top-> down): n doped GaAs (0.06 micron thick, 1e18 doping level) \
+Layer 2: n doped GaAs (0.002 micron, 1e14 doping) \
+Layer 3: n doped AlGaAs (1 micron thick, x composition: 0.3, 1e14 doping) \
+Heterojunction alignment factor: 0.6 where alignment factor is the ratio of the conduction band discontinuity over the total difference in band gab. \
+Gate length: 0.6 micron \
+Gate metal work function: 4.87 eV \
+Separation between the source and drain electrode:  1.6 micron  \
+
+<img width="465" alt="image" src="https://user-images.githubusercontent.com/66625688/84572649-899a8d00-ad69-11ea-9a2b-faecc891c332.png">
+
+
+# Ressult after executing the code in ATLAS Silvaco TCAD
+
+Structure and Doping level: \
+![Doping](https://user-images.githubusercontent.com/66625688/84572686-bea6df80-ad69-11ea-9bb9-f7f3add97abd.png)
+
+![Structure](https://user-images.githubusercontent.com/66625688/84572687-c1093980-ad69-11ea-84f4-c358a83b6391.png)
+
+
+
+
+
+
+
+
 
