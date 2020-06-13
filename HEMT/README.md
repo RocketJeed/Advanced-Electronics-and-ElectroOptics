@@ -15,9 +15,9 @@ Conventional Doping Will increase the free carrier concentration and the conduct
 But that is at the expense of an increase ionized impurity scaring or the collision between electrons and latus.\
 What to Do ? \
 Heterostructure and modulation doping will solve the problem.\
-Having one wide band gap in top of another lower band gab will allow electrons to flow from the AlGaAs to GaAs because they \ tend to move to lower energy states, however, when they move to the GaAs they will not introduce doner concentration in GaAs \ or, which means less collisions and higher electron mobility achieved ! \
+Having one wide band gap in top of another lower band gab will allow electrons to flow from the AlGaAs to GaAs because they tend to move to lower energy states, however, when they move to the GaAs they will not introduce doner concentration in GaAs \ or, which means less collisions and higher electron mobility achieved ! \
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/66625688/84572598-0d07ae80-ad69-11ea-873b-084da2964365.png">
 
 
-
+<img width="1032" alt="image" src="https://user-images.githubusercontent.com/66625688/84572613-44765b00-ad69-11ea-9cdb-9d175c0d9b08.png">
 
