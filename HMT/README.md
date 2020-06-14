@@ -18,3 +18,16 @@ Construct an Atlas model for the following GaAs/AlGaAs HBT:\
 With collector voltage is set to 2.5 volt, Simulating : \
 I_base vs V_base (0.1 to 1.4v) \
 I_collector vs. V_base (0.1 to 1.4v)
+
+# Results
+Structure and Doping
+
+<img width="1097" alt="image" src="https://user-images.githubusercontent.com/66625688/84594314-56b2d080-ae1f-11ea-9d9f-971714c1c504.png">
+
+Base current VS Collector Current
+
+<img width="603" alt="image" src="https://user-images.githubusercontent.com/66625688/84594332-6df1be00-ae1f-11ea-835d-d549abb51ca8.png">
+
+
+
+
