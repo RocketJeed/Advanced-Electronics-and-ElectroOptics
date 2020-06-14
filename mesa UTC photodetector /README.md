@@ -22,6 +22,7 @@ The x, y composition for lattice matched 1.1Q and 1.4Q\
 <img width="489" alt="image" src="https://user-images.githubusercontent.com/66625688/84594052-8fea4100-ae1d-11ea-8c07-dbe8338eef80.png">
 
 IV - Curves : forward and Reverse 
+
 <img width="849" alt="Screen Shot 2020-06-14 at 9 02 43 AM" src="https://user-images.githubusercontent.com/66625688/84594090-dc358100-ae1d-11ea-8b34-d3deea1c6aa2.png">
 
 Frequency and Impulse Response
@@ -30,6 +31,7 @@ Frequency and Impulse Response
 
 
 Structure (Biased)
+
 <img width="580" alt="image" src="https://user-images.githubusercontent.com/66625688/84594105-f96a4f80-ae1d-11ea-8752-ee0bb532bc07.png">
 
 
@@ -39,6 +41,7 @@ MQW Structure
 
 
 Cutline Biased
+
 <img width="514" alt="image" src="https://user-images.githubusercontent.com/66625688/84594124-0edf7980-ae1e-11ea-9d5d-7ec415c44c92.png">
 
 
