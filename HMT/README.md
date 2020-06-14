@@ -10,7 +10,7 @@ Construct an Atlas model for the following GaAs/AlGaAs HBT:\
 •	Layer 2: GaAs (0.08 micron base , 2e18 p-doping) \
 •	Layer 3: GaAs (0.4 micron thick sub-collector, 5e16 n-doping) \
 •	Layer 4: GaAs (0.5 micron thick collector, 2e17 n-doping) \
-•	Heterojunction alignment factor: 0.6
+•	Heterojunction alignment factor: 0.6 \
 •	Emitter contact (ohmic) width: 1 micron
 •	Base contact (ohmic) width:  2 micron (exposed by etching)
 •	Collector contact (ohmic): bottom surface of device 
