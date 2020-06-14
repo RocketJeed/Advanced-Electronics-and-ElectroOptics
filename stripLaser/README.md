@@ -35,7 +35,7 @@ Energy band digram of Homojunction Lasers.
 
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/66625688/84595827-1efc5680-ae28-11ea-99a5-20297d8fc208.png">
 
-The other and newer type of lasers is the Hetrojunction Laser, where a thin layer of a small bandgap simicondcutior, in my project it is GaAs, is sandwiched between two larger bandgap simiconductur, which in my project is AlGaAs.
+The other and newer type of lasers is the Hetrojunction Laser, where a thin layer of a small bandgap simicondcutior, in my project it is GaAs, is sandwiched between two larger bandgap simiconductur, and in my project these two layers are AlGaAs.
 
 
 ![structure-of-laser-diode](https://user-images.githubusercontent.com/66625688/84596084-9ed6f080-ae29-11ea-87f8-907ae56a6a54.jpg)
