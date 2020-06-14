@@ -33,11 +33,14 @@ We can make a PN homojunction laser By having two sides of same simiconductior, 
 
 Energy band digram of Homojunction Lasers.
 
-<img width="681" alt="image" src="https://user-images.githubusercontent.com/66625688/84595785-d0e75300-ae27-11ea-9266-355bfacbff88.png">
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/66625688/84595827-1efc5680-ae28-11ea-99a5-20297d8fc208.png">
+
+The other and newer type of lasers is the Hetrojunction Laser, where a thin layer of a small bandgap simicondcutior, in my project it is GaAs, is sandwiched between two larger bandgap simiconductur, which in my project is AlGaAs.\
 
 
+![structure-of-laser-diode](https://user-images.githubusercontent.com/66625688/84596084-9ed6f080-ae29-11ea-87f8-907ae56a6a54.jpg)
 
-
+# Design Specs 
 
 Construct an Atlas model for the following GaAs/AlGaAs strip laser:
 *  Layer 1 (top-> down): AlGaAs [0.8 micron thick top p-cladding, x composition: 0.5, 1e18 p doping level]
