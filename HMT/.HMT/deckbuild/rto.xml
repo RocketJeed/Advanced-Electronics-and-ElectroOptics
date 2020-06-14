@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1592132865" type="out">
+*** this is deckbuild version 4.6.2.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="" timestamp="1592132865" type="out"># (c) Silvaco Inc., 2018
+</text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="atlas" timestamp="1592132865" type="out">go atlas
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132866" type="out">
+
+                                   A T L A S
+
+            Version:  atlas 5.26.1.R (Tue May  8 01:53:16 PDT 2018)
+
+                           Copyright (c) 1984 - 2018
+                        Silvaco Inc. All rights reserved
+
+    We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">
+
+
+               ======================================================
+
+                  ATLAS                           : enabled
+
+                  S-PISCES                        : enabled
+
+                  BLAZE                           : enabled
+
+                  GIGA                            : enabled
+
+                  LUMINOUS                        : enabled
+
+                  LED                             : enabled
+
+                  TFT                             : en</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">abled
+
+                  ORGANIC DISPLAY                 : enabled
+
+                  ORGANIC SOLAR                   : enabled
+
+                  MIXEDMODE                       : enabled
+
+                  LASER                           : enabled
+
+                  VCSEL                           : enabled
+
+                  FERRO                           : enabled
+
+                  QUANTUM                         : enabled
+
+                  NOISE                           : enabled
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">
+                  REM                             : enabled
+
+                  MAGNETIC                        : enabled
+
+                  DEVICE3D                        : enabled
+
+                  THERMAL3D                       : enabled
+
+                  GIGA3D                          : enabled
+
+                  MIXEDMODE3D                     : enabled
+
+                  TFT3D                           : enabled
+
+                  QUANTUM3D                       : enabled
+
+     </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">             LUMINOUS3D                      : enabled
+
+                  REM3D                           : enabled
+
+                  MAGNETIC3D                      : enabled
+
+                  LED3D                           : enabled
+
+                  LASER3D                         : enabled
+
+                  MIXEDMODE XL                    : enabled
+
+                  S-PISCES BUNDLE                 : enabled
+
+                  BLAZE BUNDLE                    : enabled
+
+            </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">      TFT BUNDLE                      : enabled
+
+                  ORGANIC BUNDLE                  : enabled
+
+                  DEVICE3D BUNDLE                 : enabled
+
+                  TFT3D BUNDLE                    : enabled
+
+               ======================================================
+
+                           Sun Jun 14 07:07:47 2020
+
+                       Executing on host: DESKTOP-LU72477
+                  Current SFLM Server: DESKTOP-LU72477:3162/
+
+
+
+ATLAS&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="atlas" timestamp="1592132867" type="out">title AlGaAs HBT simulation with DD model
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">***********************************
+AlGaAs HBT simulation with DD model
+***********************************
+ATLAS&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="atlas" timestamp="1592132867" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">ATLAS&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="atlas" timestamp="1592132867" type="out"># SECTION 1: Mesh spectification
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">ATLAS&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="atlas" timestamp="1592132867" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132867" type="out">ATLAS&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="atlas" timestamp="1592132867" type="out">mesh  space.mult=1.0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132869" type="out">	####################################################
+	######                                        ######
+	######           Running on 1 CPU             ######
+	######            4 CPUs available            ######
+	######                                        ######
+	####################################################
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132869" type="out">ATLAS&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="atlas" timestamp="1592132869" type="out"># 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132869" type="out">ATLAS&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="atlas" timestamp="1592132870" type="out">x.mesh loc=0.00 spac=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="atlas" timestamp="1592132870" type="out">x.mesh loc=2.00 spac=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="atlas" timestamp="1592132870" type="out">x.mesh loc=3.00 spac=0.2
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="atlas" timestamp="1592132870" type="out">x.mesh loc=4.00 spac=0.2
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=0.00 spac=0.03
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="15" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=0.15 spac=0.005
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=0.20 spac=0.015
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="17" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=0.23 spac=0.01
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="18" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=0.63 spac=0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="19" simulator="atlas" timestamp="1592132870" type="out">y.mesh loc=1.13 spac=0.03
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="20" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="21" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="22" simulator="atlas" timestamp="1592132870" type="out"># SECTION 2: Structure definition
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="23" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="24" simulator="atlas" timestamp="1592132870" type="out">region num=1 material=AlGaAs x.min=3 x.max=4  y.min=0.0 y.max=0.15 x.comp=0.3 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="26" simulator="atlas" timestamp="1592132870" type="out">region num=2 material=GaAs  x.min=0 x.max=4 y.min=0.15 y.max=0.23
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="27" simulator="atlas" timestamp="1592132870" type="out">region num=3 material=GaAs  x.min=0 x.max=4 y.min=0.23 y.max=0.63
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="28" simulator="atlas" timestamp="1592132870" type="out">region num=4 material=GaAs  x.min=0 x.max=4 y.min=0.63 y.max=1.13  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="29" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="30" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="31" is-extract="false" line-id="31" simulator="atlas" timestamp="1592132870" type="out"># Etching 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="32" is-extract="false" line-id="32" simulator="atlas" timestamp="1592132870" type="out">region num=5 mat=air x.max=3  y.max=0.15
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="33" is-extract="false" line-id="33" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="34" is-extract="false" line-id="34" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="35" is-extract="false" line-id="35" simulator="atlas" timestamp="1592132870" type="out">elec num=1  name=emitter x.min=3.0 x.max=4.0 y.min=0.0 y.max=0.0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out"> 
+Electrode #1
+Name: emitter             
+ Number of boundary nodes: 6
+ Dimensions in microns: 
+       min         max
+ x 3.000e+000  4.000e+000 
+ y 0.000e+000  0.000e+000 
+
+ATLAS&gt; </text>
+
+  <text deck-line="36" is-extract="false" line-id="36" simulator="atlas" timestamp="1592132870" type="out">elec num=2  name=base    x.min=0.0 x.max=2.0 y.min=0.15 y.max=0.15
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out"> 
+Electrode #2
+Name: base                
+ Number of boundary nodes: 9
+ Dimensions in microns: 
+       min         max
+ x 0.000e+000  2.000e+000 
+ y 1.500e-001  1.500e-001 
+
+ATLAS&gt; </text>
+
+  <text deck-line="37" is-extract="false" line-id="37" simulator="atlas" timestamp="1592132870" type="out">elec num=3  name=collector bot 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out"> 
+Electrode #3
+Name: collector           
+ Number of boundary nodes: 18
+ Dimensions in microns: 
+       min         max
+ x 0.000e+000  4.000e+000 
+ y 1.130e+000  1.130e+000 
+
+ATLAS&gt; </text>
+
+  <text deck-line="38" is-extract="false" line-id="38" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="39" is-extract="false" line-id="39" simulator="atlas" timestamp="1592132870" type="out">doping uniform region=1 n.type conc=2.e17
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">
+Mesh
+ Type:               non-cylindrical
+ Total grid points:  846
+ Total triangles  :  1564
+ Obtuse triangles :  0  (0 %)
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="40" is-extract="false" line-id="40" simulator="atlas" timestamp="1592132870" type="out">doping uniform region=2 p.type conc=2.e18
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="41" is-extract="false" line-id="41" simulator="atlas" timestamp="1592132870" type="out">doping uniform region=3 n.type conc=5.e16
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="42" is-extract="false" line-id="42" simulator="atlas" timestamp="1592132870" type="out">doping uniform region=4 n.type conc=2.e17
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="43" is-extract="false" line-id="43" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="44" is-extract="false" line-id="44" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="45" is-extract="false" line-id="45" simulator="atlas" timestamp="1592132870" type="out"># SECTION 3: Set models and define material parameters
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="46" is-extract="false" line-id="46" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="47" is-extract="false" line-id="47" simulator="atlas" timestamp="1592132870" type="out">material taun0=1.e-9 taup0=1.e-9 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="48" is-extract="false" line-id="48" simulator="atlas" timestamp="1592132870" type="out">material material=AlGaAs mun=2200 mup=350 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="49" is-extract="false" line-id="49" simulator="atlas" timestamp="1592132870" type="out">material align=0.6
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="50" is-extract="false" line-id="50" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="51" is-extract="false" line-id="51" simulator="atlas" timestamp="1592132870" type="out">model  srh fldmob   print  optr  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="52" is-extract="false" line-id="52" simulator="atlas" timestamp="1592132870" type="out">model material=GaAs conmob evsatmod=1 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="53" is-extract="false" line-id="53" simulator="atlas" timestamp="1592132870" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="54" is-extract="false" line-id="54" simulator="atlas" timestamp="1592132870" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="55" is-extract="false" line-id="55" simulator="atlas" timestamp="1592132870" type="out"># SECTION 4: Initial solution and collector bias ramp
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">ATLAS&gt; </text>
+
+  <text deck-line="56" is-extract="false" line-id="56" simulator="atlas" timestamp="1592132870" type="out">solve init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">
+
+CONSTANTS:
+ Boltzmann's constant  = 1.38066e-023 J/K
+ Elementary charge     = 1.60219e-019 C
+ Permitivity in vacuum = 8.85419e-014 F/cm
+ Temperature           = 300 K
+ Thermal voltage       = 0.025852 V
+
+REGIONAL MATERIAL PARAMETERS:
+ Region       :        1         2         3         4         5         6         7         8   
+ Material     :     AlGaAs      GaAs      GaAs      GaAs       Air Conductor Conductor Conductor 
+ Type         :    semicond. semicond. semicond. semicond. insulato</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">r   metal     metal     metal  
+
+ Average </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132870" type="out">Composition Fraction 
+ X-com</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">position:       0.3         0         0         0         0         0         0         0 
+ Y-composition:         0         0         0         0         0         0         0         0 
+
+ Band Parameters
+ Epsilon      :      12.3      13.2      13.2      13.2         1                               
+ Eg (eV)      :       1.8      1.42      1.42      1.42                                         
+ Chi (eV)     :      3.84      4.07      4.07      4.07                                         
+ Nc (pe</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">r cc)  : 6.99e+017 4.35e+017 4.35e+017 4.35e+017                                         
+ Nv (per cc)  : 1.44e+019 1.29e+019 1.29e+019 1.29e+019                                         
+ ni (per cc)  : 2.31e+003 2.67e+006 2.67e+006 2.67e+006                                         
+
+ Bandgap narrowing parameters 
+ bgn.e (eV)   :     0.009     0.009     0.009     0.009                                         
+ bgn.n (/cc)  :    1e+017    1e+017    1e+017    1e+017                                     </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">    
+ bgn.c        :       0.5       0.5       0.5       0.5                                         
+ ubgn.b       :  3.1e+012  3.1e+012  3.1e+012  3.1e+012                                         
+ ubgn.c       :  3.9e-005  3.9e-005  3.9e-005  3.9e-005                                         
+ bgn.shnk.me  :     0.321     0.321     0.321     0.321                                         
+ bgn.shnk.mh  :     0.346     0.346     0.346     0.346                                         
+ bgn.shnk.eps :</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">      11.7      11.7      11.7      11.7                                         
+ bgn.shnk.ge  :        12        12        12        12                                         
+ bgn.shnk.gh  :         4         4         4         4                                         
+ bgn.lind.anc :         0         0         0         0                                         
+ bgn.lind.bnc :         0         0         0         0                                         
+ bgn.lind.anv :         0         0 </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">        0         0                                         
+ bgn.lind.bnv :         0         0         0         0                                         
+ bgn.lind.apc :         0         0         0         0                                         
+ bgn.lind.bpc :         0         0         0         0                                         
+ bgn.lind.apv :         0         0         0         0                                         
+ bgn.lind.bpv :         0         0         0         0  </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">                                       
+ bgn.lind.cpv :         0         0         0         0                                         
+ bgn.lind.nd  :         0         0         0         0                                         
+ bgn.lind.na  :         0         0         0         0                                         
+
+ Effective Richardson Constants
+ An*          :        11      6.29      6.29      6.29                                         
+ Ap*          :      82.9       105       1</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">05       105                                         
+
+ Incomplete Ionization Parameters
+
+ Recombination Parameters
+ taun0        :    1e-009    1e-009    1e-009    1e-009                                         
+ taup0        :    1e-009    1e-009    1e-009    1e-009                                         
+ etrap        :         0         0         0         0                                         
+ lt.taun      :         0         0         0         0                                         </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">
+ lt.taup      :         0         0         0         0                                         
+ nsrhn        :   -1e+003    5e+016    5e+016    5e+016                                         
+ nsrhp        :   -1e+003    5e+016    5e+016    5e+016                                         
+ ksrhtn       :    0.0025    0.0025    0.0025    0.0025                                         
+ ksrhtp       :    0.0025    0.0025    0.0025    0.0025                                         
+ ksrhcn       :    </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">3e-013    3e-013    3e-013    3e-013                                         
+ ksrhcp       : 1.18e-012 1.18e-012 1.18e-012 1.18e-012                                         
+ ksrhgn       :      1.77      1.77      1.77      1.77                                         
+ ksrhgp       :      0.57      0.57      0.57      0.57                                         
+ nsrhn        :   -1e+003    5e+016    5e+016    5e+016                                         
+ nsrhp        :   -1e+003    5e+016    5</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">e+016    5e+016                                         
+ augn         :    5e-030    5e-030    5e-030    5e-030                                         
+ augp         :    1e-031    1e-031    1e-031    1e-031                                         
+ augkn        :         0         0         0         0                                         
+ augkp        :         0         0         0         0                                         
+ kaugcn       : 1.83e-031 1.83e-031 1.83e-031 1.83e-031      </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">                                   
+ kaugcp       : 2.78e-031 2.78e-031 2.78e-031 2.78e-031                                         
+ kaugdn       :      1.18      1.18      1.18      1.18                                         
+ kaugdp       :      0.72      0.72      0.72      0.72                                         
+ aug.cnl      :  2.2e-031  2.2e-031  2.2e-031  2.2e-031                                         
+ aug.cpl      :  9.2e-032  9.2e-032  9.2e-032  9.2e-032                           </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">              
+ aug.chi      : 1.66e-030 1.66e-030 1.66e-030 1.66e-030                                         
+ hns.ae       :  6.7e-032  6.7e-032  6.7e-032  6.7e-032                                         
+ hns.ah       :  7.2e-032  7.2e-032  7.2e-032  7.2e-032                                         
+ hns.be       : 2.45e-031 2.45e-031 2.45e-031 2.45e-031                                         
+ hns.bh       :  4.5e-033  4.5e-033  4.5e-033  4.5e-033                                         
+ hns.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">ce       : -2.2e-032 -2.2e-032 -2.2e-032 -2.2e-032                                         
+ hns.ch       : 2.63e-032 2.63e-032 2.63e-032 2.63e-032                                         
+ hns.he       :      3.47      3.47      3.47      3.47                                         
+ hns.hh       :      8.26      8.26      8.26      8.26                                         
+ hns.n0e      :    1e+018    1e+018    1e+018    1e+018                                         
+ hns.p0e      :    1e+018 </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">   1e+018    1e+018    1e+018                                         
+ copt         :  1.5e-010  1.5e-010  1.5e-010  1.5e-010                                         
+
+ Band-to-band tunneling Parameters
+ mass.tunnel  :      0.25      0.25      0.25      0.25                                         
+ me.tunnel    :    0.0919     0.067     0.067     0.067                                         
+ mh.tunnel    :      0.69     0.642     0.642     0.642                                         
+
+ Therma</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">l Velocities
+ vn (cm/s)    : 3.85e+007 4.51e+007 4.51e+007 4.51e+007                                         
+ vp (cm/s)    : 1.41e+007 1.46e+007 1.46e+007 1.46e+007                                         
+
+ Saturation Velocities
+ vsatn (cm/s) :  7.7e+006  7.7e+006  7.7e+006  7.7e+006                                         
+ vsatp (cm/s) :  7.7e+006  7.7e+006  7.7e+006  7.7e+006                                         
+
+REGIONAL MODEL FLAGS:
+ Region:          1    2    3    4    5    6    7    8</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out"> 
+ SRH              T    T    T    T                      
+ consrh           F    F    F    F                      
+ klasrh           F    F    F    F                      
+ Auger            F    F    F    F                      
+ klaaug           F    F    F    F                      
+ picaug           F    F    F    F                      
+ hnsaug           F    F    F    F                      
+ auggen           F    F    F    F                      
+ kerraug          F    F    F    F          </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">            
+ richteraug       F    F    F    F                      
+ optr             T    T    T    T                      
+ optr.gb          F    F    F    F                      
+ bgn(std/kla)     F    F    F    F                      
+ ubgn             F    F    F    F                      
+ bgn.alamo        F    F    F    F                      
+ bgn.bennett      F    F    F    F                      
+ bgn.schenk       F    F    F    F                      
+ bgn.lind         F    F    F    </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">F                      
+ bgn.persson      F    F    F    F                      
+ incomplete       F    F    F    F                      
+ inc.two_level    F    F    F    F                      
+ inc.ion          F    F    F    F                      
+ ioniz            F    F    F    F                      
+ inc.cryo         F    F    F    F                      
+ bbt              F    F    F    F                      
+ bbtauto          F    F    F    F                      
+ bbthurkx         F   </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out"> F    F    F                      
+ bbtkane          F    F    F    F                      
+ bbtschenk        F    F    F    F                      
+ bbtheigl         F    F    F    F                      
+ bbtnonlocal      F    F    F    F                      
+ tat(local)       F    F    F    F                      
+ tatnonlocal      F    F    F    F                      
+ tat(coulombic)   F    F    F    F                      
+ impact           F    F    F    F                      
+ Boltzmann </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">       T    T    T    T                      
+ Fermi-Dirac      F    F    F    F                      
+
+Gain and Rsp scaling
+  Gain scale factor  :         1         1         1         1         1 
+  Rsp scale factor   :         1         1         1         1         1 
+
+
+REGIONAL MOBILITY MODEL SUMMARY:
+
+  Region #1:
+
+    Model for Electrons:
+
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 2200
+        tmu = 1.5
+
+      Parallel Field Depen</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">dent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatn.t0 = 1.13e+007
+          vsatn.t1 = 12000
+          beta = 2
+
+
+    Model for Holes:
+
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 350
+        tmu = 1.5
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatp.t0 = 1.13e+007
+          vsatp.t1 = 12000</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">
+          beta = 1
+
+
+  Region #2:
+
+    Model for Electrons:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+        Using GaAs parallel field model.
+          Using built-in model for Vsat.
+          alpha = 2.4e+007
+          theta = 0.8
+          tnom = 600
+          gamma = 4
+          Ecrit = 4000
+
+
+    Model for Holes:
+
+      Concentration Dependent Mobility
+  </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">    @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatp.t0 = 1.13e+007
+          vsatp.t1 = 12000
+          beta = 1
+
+
+  Region #3:
+
+    Model for Electrons:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+   </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">     Using GaAs parallel field model.
+          Using built-in model for Vsat.
+          alpha = 2.4e+007
+          theta = 0.8
+          tnom = 600
+          gamma = 4
+          Ecrit = 4000
+
+
+    Model for Holes:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatp.t0 = 1.13e+007
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">          vsatp.t1 = 12000
+          beta = 1
+
+
+  Region #4:
+
+    Model for Electrons:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+        Using GaAs parallel field model.
+          Using built-in model for Vsat.
+          alpha = 2.4e+007
+          theta = 0.8
+          tnom = 600
+          gamma = 4
+          Ecrit = 4000
+
+
+    Model for Holes:
+
+      Concentrat</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">ion Dependent Mobility
+      @ Temperature =     300 Kelvin 
+      Using built-in model (refer to manual).
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatp.t0 = 1.13e+007
+          vsatp.t1 = 12000
+          beta = 1
+
+
+
+Contacts:
+Name         Num  Work fn    Resist.    Capacit.   Induct.
+                   (eV)      (Ohms)     (Farads)   (Henries)
+emitter       1     0.000   0.000E+00  0.000E+00  0.000</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">E+00
+base          2     0.000   0.000E+00  0.000E+00  0.000E+00
+collector     3     0.000   0.000E+00  0.000E+00  0.000E+00
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">
+Starting module:   BLAZE                          
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">
+Obtaining static solution:
+
+
+init           psi    psi 
+direct          x     rhs 
+   i    j  m  -5.00* -26.0*
+---------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">   1    1  G  -0.193 -14.19
+   1    2  G  -0.226 -14.26
+   1    3  G  -0.310 -14.31
+   1    4  G  -0.566 -14.32
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">   1    5  G  -0.686 -14.36
+   1    6  G  -0.791 -14.40
+   1    7  G  -0.878 -14.45
+   1    8  G  -0.932 -14.50
+   1    9  G  -0.980 -14.56
+   1   10  G  -1.024 -14.63
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">   1   11  G  -1.063 -14.71
+   1   12  G  -1.002 -14.82
+   1   13  G  -1.043 -15.02
+   1   14  G  -1.145 -15.47
+   1   15  G  -6.71* -21.39
+  
+ATLAS&gt; </text>
+
+  <text deck-line="57" is-extract="false" line-id="57" simulator="atlas" timestamp="1592132871" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">ATLAS&gt; </text>
+
+  <text deck-line="58" is-extract="false" line-id="58" simulator="atlas" timestamp="1592132871" type="out">save outf=HBT.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">
+MASTER format file written to HBT.str at Sun Jun 14 07:07:51 2020
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132871" type="out">ATLAS&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="59" simulator="atlas" timestamp="1592132871" type="out">tonyplot  HBT.str -set HBT.set
+</text>
+
+  <text deck-line="60" is-extract="false" line-id="60" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="61" is-extract="false" line-id="61" simulator="atlas" timestamp="1592132872" type="out">method gummel  newton trap  vsatmod.inc=0.01  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="62" is-extract="false" line-id="62" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="63" is-extract="false" line-id="63" simulator="atlas" timestamp="1592132872" type="out">solve
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">
+Obtaining static solution:
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    1  G  -13.6*               -27.7*              
+   1    2  G         -14.3*               -17.6*       
+   1    3  G                -13.6*               -15.77
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -3.191e-018 -6.679e-047 -3.191e-018 -3.191e-018
+base           0.000e+000 -1.055e-039 -3.642e-017 -3.642e-017 -3.642e-017
+collector      0.000e+000 -1.245e-018 </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">-3.296e-041 -1.245e-018 -1.245e-018
+Total                                                         -4.085e-017
+
+Time for bias point:   0.05 sec. 
+Total time:            3.64 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="64" is-extract="false" line-id="64" simulator="atlas" timestamp="1592132872" type="out">solve local vcollector=2.5
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">
+Obtaining static solution:
+
+ V(collector) = 2.5         
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    1  G  -1.365               -14.22              
+   1    2  G  -1.357               -14.24              
+   1    3  G  -1.353               -14.26              
+   1    4  G  -1.317               -14.28              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    5  G  -1.296               -14.30              
+   1    6  G  -1.260               -14.32              
+   1    7  G  -1.235               -14.34              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    8  G  -1.196               -14.36              
+   1    9  G  -1.167               -14.39              
+   1   10  G  -1.136               -14.42              
+   1   11  G  -1.075               -14.44              
+   1   12  G  -1.037               -14.47              
+   1   13  G  -0.946               -14.51              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1   14  G  -0.894               -14.54              
+   1   15  G  -0.751               -14.58              
+   1   16  G  -0.666               -14.62              
+   1   17  G  -0.372               -14.67              
+   1   18  G   0.588               -14.72              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1   19  G   0.018               -14.78              
+   1   20  G  -0.515               -14.85              
+   1   21  G  -0.745               -14.93              
+   1   22  G  -0.893               -15.02              
+   1   23  G  -1.000               -15.15              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1   24  G  -1.191               -15.42              
+   1   25  G  -5.68*               -20.28              
+   1   26  G         -9.72*               -15.90       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1   27  G                -9.64*               -15.89
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  1.012e-018 -8.054e-047  1.012e-018  1.012e-018
+base           0.000e+000 -1.142e-024  6.536e-017  6.536e-017  6.536e-017
+collector      2.500e+000 -2.707e-016  4.236e-025 -2.707e-016 -2.707e-016
+Total                                                         -2.043e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">Time for bias point:   0.41 sec. 
+Total time:            4.08 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="65" is-extract="false" line-id="65" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="66" is-extract="false" line-id="66" simulator="atlas" timestamp="1592132872" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="67" is-extract="false" line-id="67" simulator="atlas" timestamp="1592132872" type="out"># SECTION 5: Calculations for Gummel plot
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="68" is-extract="false" line-id="68" simulator="atlas" timestamp="1592132872" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="69" is-extract="false" line-id="69" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="70" is-extract="false" line-id="70" simulator="atlas" timestamp="1592132872" type="out">log outf=HBTplot.log master
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="71" is-extract="false" line-id="71" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="72" is-extract="false" line-id="72" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="73" is-extract="false" line-id="73" simulator="atlas" timestamp="1592132872" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">ATLAS&gt; </text>
+
+  <text deck-line="74" is-extract="false" line-id="74" simulator="atlas" timestamp="1592132872" type="out">solve vbase=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">  
+ Warning: Projection cannot be done with
+ current bias step.  Using previous solution
+ for initial guess.
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.1         
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    1  G  -1.105               -15.27              
+   1    2  G  -2.402               -15.98              
+   1    3  G  -3.635               -17.26              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    4  G  -6.16*               -19.79              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132872" type="out">   1    5  G         -13.2*               -16.04       
+   1    6  G                 1.671               -2.333
+   2    1  G  -1.727               -13.20              
+   2    2  G  -1.734               -13.64              
+   2    3  G  -1.769               -14.09              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   2    4  G  -1.875               -14.57              
+   2    5  G  -2.154               -15.14              
+   2    6  G  -2.814               -15.95              
+   2    7  G  -4.214               -17.39              
+   2    8  G  -7.04*               -20.21              
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   2    9  G         -8.91*               -15.84       
+   2   10  G                -9.68*               -16.02
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  1.634e-018 -3.089e-030  1.634e-018  1.634e-018
+base           1.000e-001 -1.694e-025 -4.101e-017 -4.101e-017 -4.101e-017
+collector      2.500e+000 -1.370e-017  2.105e-026 -1.370e-017 -1.370e-017
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">                                          -5.307e-017
+
+Time for bias point:   0.26 sec. 
+Total time:            4.50 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="75" is-extract="false" line-id="75" simulator="atlas" timestamp="1592132873" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">ATLAS&gt; </text>
+
+  <text deck-line="76" is-extract="false" line-id="76" simulator="atlas" timestamp="1592132873" type="out">method  newton  trap autonr vsatmod.inc=0.01 itlim=50
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">ATLAS&gt; </text>
+
+  <text deck-line="77" is-extract="false" line-id="77" simulator="atlas" timestamp="1592132873" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">ATLAS&gt; </text>
+
+  <text deck-line="78" is-extract="false" line-id="78" simulator="atlas" timestamp="1592132873" type="out">solve vbase=0.1 vstep=0.1 name=base vfinal=1.3
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">
+Obtaining static solution:
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   1       N  -10.7* -11.2* -10.7* -29.8* -16.27 -16.47
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  1.712e-018 -2.931e-030  1.712e-018  1.712e-018
+base           1.000e-001 -5.622e-026 -1.754e-016 -1.754e-016 -1.754e-016
+collector      2.500e+000  4.202e-018  2.100e-026  4.202e-018  4.202e-018
+Total                                                         -1.695e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">Time for bias point:   0.07 sec. 
+Total time:            4.70 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.2         
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   1       N   1.228  0.658  0.367 -29.0* -2.985 -1.804
+   2       N   1.178 -0.301 -0.060 -16.17 -3.553 -2.173
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   3       N   1.013  0.585  0.609 -29.1* -3.554 -2.132
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   4       A   1.518 -0.055 -0.054 -14.82 -3.916 -2.325
+   5       N   2.000  1.940  1.649 -13.70 -2.195 -1.121
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   6       N   2.000  1.601  0.743 -14.37 -2.168 -2.295
+   7       N   2.000  3.796  2.079 -14.25 -2.859 -1.055
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">   8       N   2.000  5.103  4.200 -11.21  1.014  0.913
+   9       N   1.990  3.301  2.621 -11.51 -0.907 -0.207
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">  10       N   2.000  5.804  2.234 -11.81 -1.184 -0.519
+  11       N   2.000  7.187  5.584 -12.12  0.112 -0.055
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">  12       N   2.000  1.374  4.599 -12.42  0.030 -1.992
+  13       N   2.000  3.492  2.802 -12.72 -0.072 -1.202
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">  14       N   2.000  4.510  2.173 -13.02 -0.243 -1.834
+  15       N   2.000  4.651  5.305 -13.32 -0.219 -1.107
+  16       N   2.000  2.731  4.487 -13.62 -0.406 -2.277
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132873" type="out">  17       N   2.000  6.279  5.153 -11.99  0.880  0.276
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  18       N   2.000  3.616  4.321 -12.49  0.627 -0.623
+  19       N   2.000  5.721  6.503 -12.80  0.585 -0.607
+  20       N   2.000  4.984  3.482 -13.10  0.299 -0.151
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  21       N   2.000  4.673  4.358 -13.40  0.100 -1.402
+  22       N   2.000  7.090  3.703 -8.351  0.390  0.237
+
+Warning: Solution algorithm cannot reduce residual(s).
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 1 times.
+ 
+
+Obtaining static solution:
+
+ V(   base  ) = 0.15        
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+----</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">---------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">   1       N   0.691  0.123 -0.275 -29.4* -4.729 -2.202
+   2       N   0.649 -0.061 -0.253 -18.33 -4.896 -2.353
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">   3       N   0.605  0.847  0.050 -29.5* -5.272 -2.266
+   4       A   0.847 -0.181 -0.090 -29.4* -5.182 -2.281
+   5       N   1.388  0.599  1.045 -28.7* -3.037 -1.994
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">   6       N   1.431 -0.156 -0.055 -15.51 -3.009 -2.443
+   7       N   1.664  1.907  0.680 -15.81 -2.462 -1.766
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">   8       N   1.699  0.442  0.190 -15.04 -2.749 -2.337
+   9       N   1.992  4.874  1.282 -15.37 -1.734 -1.404
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  10       N   2.000  5.474  4.852 -15.08 -2.603 -2.258
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  11       N   2.000  6.441  4.740 -13.73 -0.412 -0.819
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  12       N   2.000  3.946  4.698 -14.14 -1.653 -1.596
+  13       N   2.000  2.917  3.172 -14.47 -2.212 -1.363
+  14       N   2.000  3.359  4.993 -14.29 -1.755 -2.026
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  15       N   2.000  5.331  7.204 -12.07  0.801  0.009
+  16       N   2.000  3.603  6.337 -12.52  1.154  0.079
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  17       N   2.000  3.123  6.842 -12.81  0.394  0.207
+  18       N   2.000  5.696  5.608 -12.08  1.103  0.623
+  19       N   2.000  8.083  6.538 -11.39  1.306  0.483
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  20       N   2.000  6.874  3.085 -12.20  1.025  0.182
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  21       N   2.000  4.525  3.731 -12.98  0.732 -0.027
+  22       N   2.000  5.788  3.931 -12.91  0.440 -0.322
+  23       N   2.000  4.404  4.756 -12.72 -0.124  0.722
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">  24       N   2.000  3.847  5.639 -13.42 -0.425  0.332
+  25       N   2.000  5.272  6.874 -12.08  0.936  1.169
+
+Warning: Solution algorithm cannot reduce residual(s).
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 2 times.
+ 
+
+Obtaining static solution:
+
+ V(   base  ) = 0.125       
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+----</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132874" type="out">---------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N   0.226 -0.339 -0.895 -29.8* -5.736 -2.592
+   2       N  -0.027 -0.652 -0.818 -29.7* -6.221 -2.975
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   3       N  -0.571 -0.902 -1.271 -29.7* -7.575 -3.706
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   4       A  -1.249 -1.938 -2.015 -29.8* -7.905 -4.170
+   5       N  -1.836 -2.531 -2.602 -29.7* -9.876 -6.172
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   6       A  -3.832 -4.474 -4.602 -29.7* -11.58 -7.875
+   7       A  -5.53* -6.18* -6.30* -29.8* -13.28 -9.576
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   8       N  -7.24* -7.89* -8.01* -29.9* -16.27 -16.43
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  6.226e-019 -7.703e-030  6.226e-019  6.226e-019
+base           1.250e-001 -5.622e-026 -1.551e-016 -1.551e-016 -1.551e-016
+collector      2.500e+000  1.167e-017  2.099e-026  1.167e-017  1.167e-017
+Total                                                         -1.428e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">Time for bias point:   0.26 sec. 
+Total time:            6.59 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.15        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N  -2.222 -2.222 -3.674 -29.8* -8.709 -10.60
+   2       N  -5.21* -4.856 -6.50* -29.8* -14.12 -16.39
+   3       A  -10.5* -10.7* -12.0* -29.8* -16.23 -16.39
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   4       N  -13.2* -13.5* -14.0* -29.9* -16.23 -16.39
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  7.004e-019 -2.008e-029  7.004e-019  7.004e-019
+base           1.500e-001 -5.622e-026 -1.810e-016 -1.810e-016 -1.810e-016
+collector      2.500e+000  1.167e-017  2.098e-026  1.167e-017  1.167e-017
+Total                                                         -1.686e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">Time for bias point:   0.11 sec. 
+Total time:            6.71 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.2         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N  -1.697 -1.697 -3.234 -29.6* -7.713 -9.672
+   2       N  -4.288 -3.816 -5.42* -29.8* -12.11 -14.89
+   3       A  -8.65* -8.55* -10.0* -29.9* -16.25 -16.50
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   4       N  -12.7* -12.9* -13.9* -29.9* -16.27 -16.37
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000  1.089e-018 -1.354e-028  1.089e-018  1.089e-018
+base           2.000e-001 -5.622e-026 -9.690e-017 -9.690e-017 -9.690e-017
+collector      2.500e+000  1.089e-017  2.095e-026  1.089e-017  1.089e-017
+Total                                                         -8.492e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">Time for bias point:   0.12 sec. 
+Total time:            6.85 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.3         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N  -1.038 -1.038 -2.431 -29.8* -6.451 -8.488
+   2       N  -2.811 -2.532 -3.968 -29.7* -9.508 -11.89
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   3       A  -6.18* -5.66* -7.30* -29.7* -12.35 -14.96
+   4       N  -9.01* -8.80* -10.2* -29.7* -16.27 -16.45
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -7.782e-019 -6.133e-027 -7.782e-019 -7.782e-019
+base           3.000e-001 -5.617e-026 -1.243e-016 -1.243e-016 -1.243e-016
+collector      2.500e+000  1.089e-017  2.090e-026  1.089e-017  1.089e-017
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">                                          -1.141e-016
+
+Time for bias point:   0.12 sec. 
+Total time:            6.97 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.4         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N  -0.882 -0.882 -2.056 -29.8* -5.969 -8.207
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   2       N  -2.366 -2.288 -3.551 -29.8* -8.738 -10.97
+   3       A  -5.13* -4.817 -6.28* -30.0* -11.20 -13.42
+   4       A  -7.58* -7.28* -8.74* -29.9* -13.66 -15.88
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   5       N  -10.0* -9.74* -11.2* -30.0* -16.27 -16.42
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -1.868e-018 -2.778e-025 -1.868e-018 -1.868e-018
+base           4.000e-001 -5.414e-026 -1.642e-016 -1.642e-016 -1.642e-016
+collector      2.500e+000  3.424e-018  2.085e-026  3.424e-018  3.424e-018
+Total                                                         -1.627e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">Time for bias point:   0.15 sec. 
+Total time:            7.12 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.5         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N  -0.845 -0.845 -1.944 -30.0* -5.762 -8.101
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   2       N  -2.326 -2.181 -3.297 -29.8* -8.304 -10.87
+   3       A  -4.887 -4.708 -6.05* -29.9* -10.54 -13.11
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   4       A  -7.13* -7.04* -8.33* -29.8* -12.78 -15.36
+   5       N  -9.38* -9.28* -10.6* -29.9* -16.36 -16.36
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -2.467e-017 -1.260e-023 -2.467e-017 -2.467e-017
+base           5.000e-001  2.630e-026 -8.056e-017 -8.056e-017 -8.056e-017
+collector      2.500e+000  3.424e-018  2.079e-026  3.424e-018  3.424e-018
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">                                          -1.018e-016
+
+Time for bias point:   0.13 sec. 
+Total time:            7.26 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.6         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   1       N  -0.850 -0.850 -1.923 -30.0* -5.691 -8.042
+   2       N  -2.235 -2.285 -3.216 -29.9* -8.156 -10.99
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132875" type="out">   3       A  -4.739 -4.562 -5.73* -30.0* -10.32 -13.16
+   4       A  -6.93* -6.73* -7.92* -30.1* -12.49 -15.33
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   5       N  -9.11* -8.91* -10.1* -30.1* -16.27 -16.75
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -1.555e-016 -5.714e-022 -1.555e-016 -1.555e-016
+base           6.000e-001  3.254e-024  3.984e-017  3.984e-017  3.984e-017
+collector      2.500e+000  2.957e-018  2.073e-026  2.957e-018  2.957e-018
+Total                                                         -1.127e-016
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">Time for bias point:   0.14 sec. 
+Total time:            7.42 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.7         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N  -0.897 -0.897 -1.903 -30.0* -5.667 -8.069
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   2       N  -2.296 -2.260 -3.243 -30.0* -8.069 -10.92
+   3       A  -4.686 -4.599 -5.68* -30.0* -10.21 -13.16
+   4       A  -6.76* -6.68* -7.75* -30.1* -12.32 -15.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   5       N  -8.82* -8.75* -9.81* -30.1* -16.24 -16.66
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -7.788e-016 -2.591e-020 -7.788e-016 -7.788e-016
+base           7.000e-001  1.343e-022  6.094e-016  6.094e-016  6.094e-016
+collector      2.500e+000  8.980e-017  2.068e-026  8.980e-017  8.980e-017
+Total                                                         -7.969e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">Time for bias point:   0.21 sec. 
+Total time:            7.62 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 0.8         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   1       N  -0.797 -0.797 -1.809 -30.1* -5.635 -8.144
+   2       N  -2.249 -2.062 -3.039 -30.1* -7.956 -10.42
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   3       A  -4.727 -4.525 -5.61* -30.1* -10.05 -12.74
+   4       A  -6.75* -6.77* -7.72* -30.1* -12.09 -14.96
+   5       N  -8.77* -8.82* -9.75* -30.2* -16.23 -16.70
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -6.058e-015 -1.174e-018 -6.059e-015 -6.059e-015
+base           8.000e-001  5.509e-021  3.250e-015  3.250e-015  3.250e-015
+collector      2.500e+000  2.797e-015 </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out"> 2.062e-026  2.797e-015  2.797e-015
+Total                                                         -1.199e-017
+
+Time for bias point:   0.13 sec. 
+Total time:            7.75 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 0.9         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   1       N  -0.737 -0.737 -1.693 -30.1* -5.442 -8.084
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   2       N  -2.075 -1.951 -2.864 -30.1* -7.794 -10.05
+   3       A  -4.397 -4.091 -5.15* -30.1* -9.828 -12.06
+   4       A  -6.43* -6.10* -7.18* -30.0* -11.86 -14.09
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   5       N  -8.45* -8.13* -9.21* -30.0* -16.31 -16.77
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -1.320e-013 -5.320e-017 -1.320e-013 -1.320e-013
+base           9.000e-001  2.275e-019  2.536e-014  2.536e-014  2.536e-014
+collector      2.500e+000  1.067e-013  2.057e-026  1.067e-013  1.067e-013
+Total                                                         -2.247e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">Time for bias point:   0.19 sec. 
+Total time:            7.95 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 1           
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   1       N  -0.721 -0.721 -1.609 -30.0* -5.213 -8.041
+   2       N  -1.961 -2.011 -2.785 -30.1* -7.272 -9.914
+   3       A  -4.115 -3.856 -4.906 -30.1* -9.043 -11.71
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   4       A  -5.93* -5.68* -6.69* -30.1* -10.81 -13.49
+   5       N  -7.70* -7.49* -8.45* -30.1* -16.25 -17.07
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -4.521e-012 -2.407e-015 -4.524e-012 -4.524e-012
+base           1.000e+000  9.435e-018  3.082e-013  3.082e-013  3.082e-013
+collector      2.500e+000  4.215e-012  2.051e-026  4.215e-012  4.215e-012
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">                                          -8.965e-018
+
+Time for bias point:   0.15 sec. 
+Total time:            8.11 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 1.1         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.0</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">0* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   1       N  -0.669 -0.669 -1.503 -30.1* -5.123 -8.051
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   2       N  -1.949 -1.803 -2.616 -29.9* -6.998 -9.575
+   3       A  -3.912 -3.690 -4.735 -29.9* -8.629 -11.40
+   4       N  -5.52* -5.34* -6.35* -30.0* -14.18 -17.05
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -1.694e-010 -1.086e-013 -1.695e-010 -1.695e-010
+base           1.100e+000  3.915e-016  3.087e-012  3.087e-012  3.087e-012
+collector      2.500e+000  1.664e-010 </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out"> 2.045e-026  1.664e-010  1.664e-010
+Total                                                         -3.839e-017
+
+Time for bias point:   0.11 sec. 
+Total time:            8.23 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 1.2         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N  -0.591 -0.591 -1.070 -30.0* -4.948 -7.655
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   2       N  -1.740 -1.666 -2.004 -30.1* -6.918 -9.131
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132876" type="out">   3       A  -3.662 -3.311 -4.050 -30.0* -8.480 -10.71
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   4       N  -5.27* -4.890 -5.67* -30.1* -13.61 -16.12
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -6.546e-009 -4.889e-012 -6.551e-009 -6.551e-009
+base           1.200e+000  1.614e-014  3.287e-011  3.289e-011  3.289e-011
+collector      2.500e+000  6.518e-009  2.039e-026  6.518e-009  6.518e-009
+Total                                                          2.534e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">Time for bias point:   0.20 sec. 
+Total time:            8.43 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 1.3         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   1       N  -0.531 -0.068 -0.867 -30.0* -4.691 -7.232
+   2       N  -1.611 -1.519 -1.719 -30.0* -6.129 -8.699
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   3       A  -3.233 -2.919 -3.530 -30.0* -7.384 -10.06
+   4       A  -4.519 -4.182 -4.827 -30.0* -8.640 -11.34
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   5       N  -5.77* -5.43* -6.08* -30.0* -14.26 -17.07
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -2.509e-007 -2.188e-010 -2.511e-007 -2.511e-007
+base           1.300e+000  6.538e-013  8.003e-010  8.010e-010  8.010e-010
+collector      2.500e+000  2.503e-007  2.034e-026  2.503e-007  2.503e-007
+Total                                                          3.737e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">Time for bias point:   0.26 sec. 
+Total time:            8.70 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="79" is-extract="false" line-id="79" simulator="atlas" timestamp="1592132877" type="out">solve vbase=1.3 vstep=0.025 name=base vfinal=1.4
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 1.3         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   1       N  -11.4* -11.0* -11.7* -30.1* -16.25 -17.6*
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -2.509e-007 -2.188e-010 -2.511e-007 -2.511e-007
+base           1.300e+000  6.538e-013  8.003e-010  8.010e-010  8.010e-010
+collector      2.500e+000  2.503e-007  2.034e-026  2.503e-007  2.503e-007
+Total                                                          3.364e-018
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">Time for bias point:   0.07 sec. 
+Total time:            8.80 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 1.325       
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   1       N   0.226  0.196 -0.249 -29.7* -4.860 -2.592
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   2       N  -0.027 -0.273 -0.650 -28.0* -5.253 -2.975
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   3       N  -0.571  0.011 -0.784 -30.1* -6.810 -3.706
+   4       A  -1.249 -1.753 -1.942 -25.92 -7.183 -4.170
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   5       N  -1.836 -2.365 -2.512 -30.0* -9.096 -6.172
+   6       A  -3.832 -3.462 -4.431 -30.0* -10.73 -7.875
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   7       A  -5.53* -5.35* -6.14* -30.0* -12.43 -9.576
+   8       N  -7.24* -7.08* -7.84* -30.0* -16.32 -17.7*
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -6.207e-007 -5.651e-010 -6.212e-007 -6.212e-007
+base           1.325e+000  1.640e-012  1.894e-009  1.895e-009  1.895e-009
+collector      2.500e+000  6.193e-007  2.032e-026  6.193e-007  6.193e-007
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">                                           1.172e-017
+
+Time for bias point:   0.34 sec. 
+Total time:            9.14 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 1.35        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">   1       N  -1.581 -1.244 -1.666 -30.0* -7.038 -8.920
+   2       N  -3.836 -3.167 -3.403 -30.1* -10.91 -13.07
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -1.530e-006 -1.458e-009 -1.531e-006 -1.531e-006
+base           1.350e+000  4.102e-012  4.508e-009  4.512e-009  4.512e-009
+collector      2.500e+000  1.527e-006  2.032e-026  1.527e-006  1.527e-006
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132877" type="out">                                           1.978e-018
+
+Time for bias point:   0.10 sec. 
+Total time:            9.31 sec. 
+  
+
+Obtaining static solution:
+
+ V(   base  ) = 1.375       
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">   1       N  -1.269 -1.074 -1.591 -30.0* -6.934 -8.749
+   2       N  -3.558 -2.690 -3.288 -30.0* -9.865 -12.94
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -3.750e-006 -3.754e-009 -3.754e-006 -3.754e-006
+base           1.375e+000  1.021e-011  1.078e-008  1.079e-008  1.079e-008
+collector      2.500e+000  3.743e-006  2.031e-026  3.743e-006  3.743e-006
+Total               </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">                                           3.302e-017
+
+Time for bias point:   0.11 sec. 
+Total time:            9.42 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">
+Obtaining static solution:
+
+ V(   base  ) = 1.4         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">   1       N  -0.905 -1.001 -1.574 -29.9* -6.898 -8.534
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">   2       N  -2.831 -2.147 -3.224 -30.0* -8.769 -12.86
+   3       A  -4.732 -4.158 -6.66* -30.0* -10.50 -15.96
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">   4       N  -6.56* -6.07* -8.52* -30.0* -16.24 -17.8*
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+emitter        0.000e+000 -9.121e-006 -9.631e-009 -9.131e-006 -9.131e-006
+base           1.400e+000  2.526e-011  2.591e-008  2.594e-008  2.594e-008
+collector      2.500e+000  9.105e-006  2.033e-026  9.105e-006  9.105e-006
+Total                                                         -4.480e-017
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">Time for bias point:   0.18 sec. 
+Total time:            9.66 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="80" is-extract="false" line-id="80" simulator="atlas" timestamp="1592132878" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">ATLAS&gt; </text>
+
+  <text deck-line="81" is-extract="false" line-id="81" simulator="atlas" timestamp="1592132878" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">ATLAS&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="82" simulator="atlas" timestamp="1592132878" type="out">tonyplot HBTplot.log -set HPTplotcurve.set
+</text>
+
+  <text deck-line="83" is-extract="false" line-id="83" simulator="atlas" timestamp="1592132878" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">ATLAS&gt; </text>
+
+  <text deck-line="84" is-extract="false" line-id="84" simulator="atlas" timestamp="1592132878" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">ATLAS&gt; </text>
+
+  <text deck-line="85" is-extract="false" line-id="85" simulator="atlas" timestamp="1592132878" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">ATLAS&gt; </text>
+
+  <text deck-line="86" is-extract="false" line-id="86" simulator="atlas" timestamp="1592132878" type="out">quit
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1592132878" type="out">
+ATLAS version 5.26.1.R finished at Sun Jun 14 07:07:58 2020
+</text>
+
+</rto>

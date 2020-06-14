@@ -1,0 +1,67 @@
+go atlas
+mesh  space.mult=1.0
+x.mesh loc=0.00 spac=0.3
+x.mesh loc=2.3 spac=0.02
+x.mesh loc=2.7 spac=0.02
+x.mesh loc=5 spac=0.3
+#
+y.mesh loc=0.00 spac=0.01
+y.mesh loc=0.04 spac=0.03
+y.mesh loc=0.12 spac=0.02
+y.mesh loc=5.1 spac=1.0
+
+region     num=1 GaAs x.min=1 x.max=4 y.min=0 y.max=0.1
+region     num=2 GaAs x.min=0 x.max=5 y.min=0.1 y.max=5.1
+region     num=3 GaAs x.min=0 x.max=2 y.min=0 y.max=0.1
+region     num=4 GaAs x.min=3 x.max=5 y.min=0 y.max=0.1
+
+
+elec       num=1  name=source  x.min=0.0  x.max=2  y.min=0 y.max=0.1
+elec       num=2  name=drain   x.min=3  x.max=5  y.min=0 y.max=0.1
+elec       num=3 name=gate    x.min=2.25 length = 0.5 y.min=0 y.max=0.000005
+
+# Doping specification 
+# Region 1 is the top channel layer
+# Region 2 is the substrate
+# region 3 and 4 are the contacnts ( which should be highly  N Doped )
+doping region=1 uniform conc=6.0e17 n.type
+doping region=2 uniform conc=1.0e15 p.type
+doping region=3 uniform conc=5.0e18 n.type
+doping region=4 uniform conc=5.0e18 n.type
+
+save outf=mosfet.str
+tonyplot mosfet.str
+OUTPUT CON.BAND VAL.BAND band.temp traps u.srh taurn taurp band.param 
+
+method newton trap
+solve init       
+solve vgate=-0.02
+solve vgate=-0.04
+solve vgate=-0.08
+solve vgate=-0.1   
+log outfile=Vg01.log
+solve vdrain=0 vstep=0.05 vfinal=3 name=drain 
+log outfile=Vg2.log
+
+
+# Again for Gate Voltage  - 0.2
+solve init
+solve vgate=-0.02
+solve vgate=-0.04
+solve vgate=-0.08
+solve vgate=-0.2
+solve vdrain=0 vstep=0.05 vfinal=3 name=drain
+#for Gate Voltage  - 0.5
+log outfile=Vg05.log
+solve init
+solve vgate=-0.02
+solve vgate=-0.04
+solve vgate=-0.08
+solve vgate=-0.5
+solve vdrain=0 vstep=0.05 vfinal=3 name=drain
+# ploting
+tonyplot    -overlay Vg01.log Vg02.log Vg05.log 
+quit
+
+
+

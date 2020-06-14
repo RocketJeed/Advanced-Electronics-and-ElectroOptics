@@ -1,0 +1,183 @@
+# (c) Silvaco Inc., 2018
+go atlas
+#
+#    Illustration of lateral mode instability
+#    in AlGaAs/GaAs strip geometry laser diode
+#
+#
+mesh  space.mult=1.0 diag.flip
+# 
+x.mesh loc=-2.00 spac=0.5
+x.mesh loc=0.00 spac=0.5
+x.mesh loc=2 spac=0.2
+x.mesh loc=7 spac=0.2
+x.mesh loc=9.0 spac=0.5
+x.mesh loc=11.00 spac=0.5
+#
+y.mesh loc=0.0 spac=0.1
+y.mesh loc=0.5 spac=0.1
+y.mesh loc=0.55 spac=0.025
+y.mesh loc=0.7 spac=0.015
+y.mesh loc=0.75 spac=0.0075
+y.mesh loc=0.85 spac=0.0075
+y.mesh loc=0.9 spac=0.015
+y.mesh loc=1.05 spac=0.025
+y.mesh loc=1.1 spac=0.1
+y.mesh loc=1.9 spac=0.2
+#
+#
+region     num=1  material=AlGaAs x.min=-2 x.max=11.0 \
+ y.min=0.0 y.max=0.8 x.composition=0.5
+#
+region     num=2  material=GaAs x.min=-2 x.max=11 \
+ y.min=0.8 y.max=0.9
+#
+region     num=3  material=AlGaAs x.min=-2 x.max=11 \
+ y.min=0.9 y.max=1.9 x.composition=0.5
+#
+elec       num=1  name=anode     x.min=3.0 x.max=6.0 y.min=0.0 y.max=0.0
+elec       num=2  name=cathode   bottom
+#
+doping     uniform reg=1  p.type conc=1.e18
+doping     uniform reg=2  n.type conc=1.e15
+doping     uniform reg=3  n.type conc=1.e18
+#
+material material=GaAs   taun0=1.e-9 taup0=1.e-9 copt=1.5e-10 
+material material=AlGaAs taun0=1.e-9 taup0=1.e-9 copt=1.5e-10 align=0.6
+#
+model  
+model material=GaAs     fldmob srh optr print
+model material=AlGaAs   fldmob srh optr
+#
+solve init
+output con.band val.band
+save outf=laserex03_0.str
+tonyplot laserex03_0.str -set laserex03_0.set
+#
+
+method newton autonr trap  maxtrap=6 climit=1e-6
+ 
+solve vanode=0.1
+solve vanode=0.2
+solve vanode=0.4 vstep=0.4 name=anode vfinal=1.2
+#
+lx.m  n=1  x=0
+lx.m  n=37 x=9
+#
+ly.m  n=1  y=0.5
+ly.m  n=33 y=1.1
+#
+models material=GaAs fldmob  srh optr fermi print \
+ laser gainmod=1 las_maxch=100. \
+ las_xmin=0.1 las_xmax=8.9 las_ymin=0.5 las_ymax=1.1 \
+ photon_energy=1.43 las_nx=37 las_ny=33 spec.name=laserex03sp \
+ lmodes las_einit=1.41 las_efinal=1.48 cavity_length=200
+#
+log outf=laserex03.log
+#
+solve vanode=1.3 vstep=0.05 name=anode vfinal=2.0
+# 
+contact num=1 current
+#
+solve prev istep=0.0005 ifinal=0.004 electr=1 
+save outfile=laserex03_1.str
+#
+
+tonyplot  laserex03.log -set laserex03_log.set
+
+
+# (c) Silvaco Inc., 2018
+go atlas
+#
+#    Illustration of lateral mode instability
+#    in AlGaAs/GaAs strip geometry laser diode
+#
+#
+mesh  space.mult=1.0 diag.flip
+# 
+x.mesh loc=-2.00 spac=0.5
+x.mesh loc=0.00 spac=0.5
+x.mesh loc=2 spac=0.2
+x.mesh loc=7 spac=0.2
+x.mesh loc=9.0 spac=0.5
+x.mesh loc=11.00 spac=0.5
+#
+y.mesh loc=0.0 spac=0.1
+y.mesh loc=0.5 spac=0.1
+y.mesh loc=0.55 spac=0.025
+y.mesh loc=0.7 spac=0.015
+y.mesh loc=0.75 spac=0.0075
+y.mesh loc=0.85 spac=0.0075
+y.mesh loc=0.9 spac=0.015
+y.mesh loc=1.05 spac=0.025
+y.mesh loc=1.1 spac=0.1
+y.mesh loc=1.9 spac=0.2
+#
+#
+region     num=1  material=AlGaAs x.min=-2 x.max=11.0 \
+ y.min=0.0 y.max=0.8 x.composition=0.5
+#
+region     num=2  material=GaAs x.min=-2 x.max=11 \
+ y.min=0.8 y.max=0.9
+#
+region     num=3  material=AlGaAs x.min=-2 x.max=11 \
+ y.min=0.9 y.max=1.9 x.composition=0.5
+#
+elec       num=1  name=anode     x.min=3.0 x.max=6.0 y.min=0.0 y.max=0.0
+elec       num=2  name=cathode   bottom
+#
+doping     uniform reg=1  p.type conc=1.e18
+doping     uniform reg=2  n.type conc=1.e15
+doping     uniform reg=3  n.type conc=1.e18
+#
+material material=GaAs   taun0=1.e-9 taup0=1.e-9 copt=1.5e-10 
+material material=AlGaAs taun0=1.e-9 taup0=1.e-9 copt=1.5e-10 align=0.6
+#
+model  
+model material=GaAs     fldmob srh optr print
+model material=AlGaAs   fldmob srh optr
+#
+solve init
+output con.band val.band
+save outf=laserex03_0.str
+tonyplot laserex03_0.str -set laserex03_0.set
+#
+
+method newton autonr trap  maxtrap=6 climit=1e-6
+ 
+solve vanode=0.1
+solve vanode=0.2
+solve vanode=0.4 vstep=0.4 name=anode vfinal=1.2
+#
+lx.m  n=1  x=0
+lx.m  n=37 x=9
+#
+ly.m  n=1  y=0.5
+ly.m  n=33 y=1.1
+#
+models material=GaAs fldmob  srh optr fermi print \
+ laser gainmod=1 las_maxch=100. \
+ las_xmin=0.1 las_xmax=8.9 las_ymin=0.5 las_ymax=1.1 \
+ photon_energy=1.43 las_nx=37 las_ny=33 spec.name=laserex03sp \
+ lmodes las_einit=1.41 las_efinal=1.48 cavity_length=200
+#
+log outf=laserex03.log
+#
+solve vanode=1.3 vstep=0.05 name=anode vfinal=2.0
+#
+contact num=1 current
+#
+solve prev istep=0.0005 ifinal=0.004 electr=1 
+save outfile=laserex03_1.str
+#
+
+tonyplot  laserex03.log -set laserex03_log.set
+
+
+tonyplot laserex03_1.str -set laserex03_1.set
+
+quit
+
+
+quit
+

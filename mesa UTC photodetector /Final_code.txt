@@ -1,0 +1,145 @@
+go atlas
+
+mesh auto
+x.m l=-75 Spac=3
+x.m l=-20 Spac=1.5
+x.m l=20 Spac=1.5
+x.m l=75 Spac =3
+
+
+############# REGIONS ####################
+
+
+#n contact
+#1.1Q#
+region bottom thick = 0.1 material = InGaAsP NY = 4 donor = 1e19 x.comp=0.13513  y.comp = 0.3687
+region bottom  thick = 0.25  material =  InP NY = 4  donor = 1e19
+region bottom thick = 2.0 mat = InP NY = 4
+
+region top thick = 0.9  material =  InP NY = 4  donor = 1e19
+region top  thick = 0.1  material =  InP NY = 4  donor = 1e18
+
+
+
+#Collector
+region top  thick = 0.6 material =  InP NY = 4  donor = 1e16
+
+
+#cliff
+region top thick = 0.05 mat = InP NY = 4 donor = 1e17
+
+#band smooth
+#1.1Q#
+region top thick = 0.015 mat = InGaAsP NY = 4 donor = 1e16 x.comp = 0.13513 y.comp = 0.3687
+#1.4Q#
+region top thick = 0.015 mat = InGaAsP NY = 4 donor = 1e16 x.comp=0.31733 y.comp = 0.6032
+
+#absorber
+region top thick = 0.1 mat = InGaAs NY = 4 donor = 1e16 x.comp=0.532
+region top thick = 0.15 mat = InGaAs NY = 4 acceptor = 5e17 x.comp=0.532
+region top thick = 0.15 mat = InGaAs NY = 4 acceptor = 1e18 x.comp=0.532
+region top thick = 0.1 mat = InGaAs NY = 4 acceptor = 2e18 x.comp=0.532
+
+#band smooth
+#1.4Q#
+region top thick = 0.015 mat = InGaAsP NY = 4 acceptor = 2e18 x.comp=0.31733 y.comp = 0.6032
+#1.1Q#
+region top thick = 0.015 mat = InGaAsP NY = 4 acceptor = 2e18 x.comp=0.13513  y.comp = 0.3687
+
+#e diffusion
+region top thick = 0.1  material =  InP NY = 4  acceptor = 1.5e18
+
+#p contact
+region top thick = 0.05 mat = InGaAs NY = 4 acceptor = 2e19 x.comp=0.532
+
+
+######## ETCHING AND ELECTRODES ##############
+
+#etching
+region  mat = air  x.min=20 x.max = 75 y.max = 0.0 NY = 3
+region  mat = air  x.min = -75 x.max = -20 y.max = 0.0 NY = 3
+
+
+#electrode
+
+electrode name=gate x.min = -20 x.max =20 top
+electrode name=cathode x.min=45 x.max=75  y.min = 0  
+electrode name=cathode x.min=-75 x.max=-45  y.min = 0
+
+
+
+######### Interface, Materials and Mobility ##########
+
+#interface
+interface y.min= 2.36 y.max=0 x.min=-20 x.max=20 thermionic=true tunnel=true s.s=true
+
+material material=InGaAsP taun0=20.e-9 taup0=33e-9 \
+  align=0.4 real.index=3.4 imag.index=0
+
+material material=InGaAs taun0=0.7e-9 taup0=33e-9 \
+ real.index=3.43 imag.index=0.1
+
+material  material=InP   taun0=2e-9 taup0=33e-9 \
+ align=0.4 real.index=3.17 imag.index=0
+
+models fldmob srh optr fermidirac conmob print EVSATMOD=1
+
+mobility material = InP mun=4917.0 mup=150.0 vsatn =  2.6e7 vsatp = 0.66e7 ecritn=11e3 ecritp=4e3 gamman=4 gammap=1
+mobility material = InGaAs  mun=11599.0 mup=331.0 vsatn = 2.5e7 vsatp=0.5e7 ecritn=3e3 ecritp=4e3 gamman=4 gammap=1 ssrhn=7.134e17
+mobility material = InGaAsP mun=4600.0 mup=150.0  vsatn = 2.68e7 vsatp=0.6e7 ecritn=6e3 ecritp=4e3 gamman=4 gammap=1
+
+
+####### BEAM and Method ########
+
+beam     num=1 x.origin=0 y.origin=2.35 angle=-90 wavelength=1.550 min.window=-20 max.window=20
+method newton autonr tauto=false
+
+#################### SOLVING #######################
+
+solve  init outf = sol_gate1.str
+
+load inf = sol_gate1.str
+output band.param photogen opt.intens con.band val.band E.velocity
+save outf=mqw.str
+tonyplot mqw.str
+
+LOG outf = mqw.log
+
+#FWD Biased
+#solve vanode=0 vstep=0.1 vfinal=7 name="gate"
+#REV Biased
+solve vanode=0 vstep=-0.1 vfinal=-7 name="gate"
+
+log off
+tonyplot mqw.log
+
+output band.param photogen opt.intens con.band val.band E.velocity
+save outf=mqw_biased.str
+tonyplot mqw_biased.str
+
+
+
+
+
+log outf = mqw_ac.log
+
+###IMPULSE RESPONSE########
+#tstop = 10e-13
+solve vanode=-3 b1=0  tstop=5e-12 tstep=2e-13
+solve vanode=-3 b1=1e2   tstop=7e-12 tstep=2e-13
+solve vanode=-3 b1=0   tstop=20e-12 tstep=2e-13
+
+
+
+
+log off
+
+tonyplot mqw_ac.log
+
+FOURIER INFILE = mqw_ac.log \
+OUTFILE = fft_mqw.log INTERPOLATE
+
+tonyplot fft_mqw.log
+
+
+quit
