@@ -55,3 +55,20 @@ Construct an Atlas model for the following GaAs/AlGaAs strip laser:
 Do the following:
 1. Simulated output optical power vs input inject current
 2. Simulated the transverse lasing mode profile
+
+# Results
+
+Structure
+
+
+<img width="499" alt="image" src="https://user-images.githubusercontent.com/66625688/84596180-30def900-ae2a-11ea-8376-267223b30db6.png">
+
+
+Cathod Vs Power ( Left ) and Anaode vs Power ( Right )
+
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/66625688/84596195-53711200-ae2a-11ea-8c02-a5a2f3f98a43.png">
+
+Lasing Profile
+
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/66625688/84596216-671c7880-ae2a-11ea-8035-af5bbf9ed8b6.png">
+
