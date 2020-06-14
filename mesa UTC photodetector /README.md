@@ -15,7 +15,7 @@ Frequency response of the PD
 # Results 
 
 The x, y composition for lattice matched 1.1Q and 1.4Q\
-(google search or use atlas manual find equations for the InGaAsP bandgap,then do some sample matlab program)
+(By applying the equations for the InGaAsP bandgap in MATLAB)
 
 <img width="578" alt="image" src="https://user-images.githubusercontent.com/66625688/84594067-b0b29680-ae1d-11ea-8651-a5ef44c32203.png">
 
