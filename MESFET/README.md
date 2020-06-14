@@ -18,11 +18,11 @@
 # Design Specs 
 
 Construct an Atlas model for the following GaAs MESFET:
-•	Top channel layer: n doped GaAs (0.1 micron thick, 1e17 doping level)
-•	Bottom layer: p doped GaAs (5 micron thick, 1e15  p doping)
-•	Gate length: 0.3 micron
-•	Gate metal work function: 4.77 eV
-•	Separation between the source and drain electrode:  1 micron 
+* Top channel layer: n doped GaAs (0.1 micron thick, 1e17 doping level)
+* Bottom layer: p doped GaAs (5 micron thick, 1e15  p doping)
+* Gate length: 0.3 micron
+* Gate metal work function: 4.77 eV
+* Separation between the source and drain electrode:  1 micron 
 
 1.	Simulating the IV curve for: Gate voltage @ -0.2 and -0.5 volt , drain voltage varying from (0 to 3 volt) \
 2.	Find the Threshold gate voltage
