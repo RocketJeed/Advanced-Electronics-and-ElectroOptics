@@ -12,3 +12,23 @@
 * The current flow modulated through the conductive layer modulated at the N-Type GaAs layer. 
 * Why it is used? It has higher electron mobility what make it good for high frequency and high current, it has wider band gap and hence it can take higher temperature so we can run more current at it, the third thing is it is easy to make.
 
+# Cross section of the device
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/66625688/84594539-0dfc1700-ae21-11ea-8f96-d6a4528fde53.png">
+
+# Results
+Structure
+<img width="835" alt="image" src="https://user-images.githubusercontent.com/66625688/84594558-279d5e80-ae21-11ea-8ce0-928849c948c1.png">
+
+
+I-V Curve
+
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/66625688/84594565-2f5d0300-ae21-11ea-8b56-c54f4102a348.png">
+
+
+Thresh Hold Voltages
+
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/66625688/84594577-3c79f200-ae21-11ea-9ce5-4c313d453d1d.png">
+
+<img width="294" alt="image" src="https://user-images.githubusercontent.com/66625688/84594581-41d73c80-ae21-11ea-8578-f70efc8792ac.png">
+
+
