@@ -7,7 +7,7 @@ A photoconductor is a device whose resistance and conductivity changes in the pr
 
 
 # Design specs
-Construct an Atlas model for a mesa UTC photodetector and please find :
+Construct an Atlas model for a mesa UTC photodetector and please find : \
 I-V curve (reverse, forward biased) without light \
 PD impulse response when biased at -3 volt. To mitigate nonlinear effect, use small optical input \
 Frequency response of the PD
