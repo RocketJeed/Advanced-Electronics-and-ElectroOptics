@@ -13,7 +13,7 @@ Construct an Atlas model for the following GaAs/AlGaAs HBT:\
 •	Heterojunction alignment factor: 0.6
 •	Emitter contact (ohmic) width: 1 micron
 •	Base contact (ohmic) width:  2 micron (exposed by etching)
-•	Collector contact (ohmic): bottom surface of device \
+•	Collector contact (ohmic): bottom surface of device 
 
 With collector voltage is set to 2.5 volt, Simulating : \
 I_base vs V_base (0.1 to 1.4v) \
