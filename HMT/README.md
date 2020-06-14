@@ -1,1 +1,21 @@
-# Advanced-Electronics-and-ElectroOptics
+# HMT
+
+HMT is a type of bipolar transistor but the difference is that it is a heterojunction, which means the base have different type of semiconductor than emitter, which help to make it faster. 
+
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/66625688/84594181-7eedff80-ae1e-11ea-9afc-750e3e0f58d3.png">
+
+# Design Specs
+Construct an Atlas model for the following GaAs/AlGaAs HBT:
+•	Layer 1 (top-> down): n doped AlGaAs [0.15 micron thick emitter, x composition: 0.3 (gradual variation to base) 2e17 n doping level]
+•	Layer 2: GaAs (0.08 micron base , 2e18 p-doping)
+•	Layer 3: GaAs (0.4 micron thick sub-collector, 5e16 n-doping)
+•	Layer 4: GaAs (0.5 micron thick collector, 2e17 n-doping)
+
+•	Heterojunction alignment factor: 0.6
+•	Emitter contact (ohmic) width: 1 micron
+•	Base contact (ohmic) width:  2 micron (exposed by etching)
+•	Collector contact (ohmic): bottom surface of device
+
+Do the following, when collector voltage is set to 2.5 volt
+1.	Simulating the I_base vs V_base (0.1 to 1.4v)
+2.	Simulate the I_collector vs. V_base (0.1 to 1.4v)
