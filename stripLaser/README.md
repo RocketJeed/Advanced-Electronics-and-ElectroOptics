@@ -3,7 +3,7 @@
 # Fast Intro about Semiconductor Laser
 
 In direct bandgap Semiconductor, The recombination processes occurs without a change in electron momentum, while in indirect bandgap semiconductor the momentum of the electron has to change, which results in relesing a phenon instead of a photon, hence, in laser we need direct bandgap simiconductor in order to release photons. \
-There are three processees for interaction between a photon and an electron, and these are: \
+There are three processees for interaction between a photon and an electron, and these are: 
 
 1: absorption \
 in optical absorption, an incedint photon can exite a valance electron to go to the conduction band which generate an electron-hole pair. The energy of each foton is hv, planck constant times the photon frequency.\
